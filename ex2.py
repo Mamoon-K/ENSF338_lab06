@@ -118,10 +118,7 @@ print(f"Total search time (Binary Search): {total_time_binary:.10f} seconds \
 # The BST is generally slower for search operations compared to binary search
 # in a sorted array. This is because BST search time complexity can degrade to
 # O(n) if the tree is unbalanced, whereas binary search always operates in O(log n).
-# Sorting the array before performing binary search ensures a consistent and
-# efficient searching mechanism.
 # Thus, binary search is expected to usually be faster than searching in
-# a BST, especially in cases where the BST is unbalanced. If the tree has
-# degenerated into a linked list (see ex1 for details), then binary search
-# could be faster. This shows when running the program multiple times.
+# a BST, especially in cases where the BST is unbalanced.
+# This shows when running the program multiple times.
 # Sometimes binary search is faster, and sometimes BST is faster.
