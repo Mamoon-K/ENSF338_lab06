@@ -79,21 +79,21 @@ avg_time_shuffled, total_time_shuffled = measure_search_performance(elements_shu
 
 # Print performance results
 print(f"BST Performance Analysis:")
-print(f"Average search time (sorted insertion): {avg_time_sorted:.10f} seconds")
-print(f"Total search time (sorted insertion): {total_time_sorted:.10f} seconds")
-print(f"Average search time (shuffled insertion): {avg_time_shuffled:.10f} seconds")
-print(f"Total search time (shuffled insertion): {total_time_shuffled:.10f} seconds")
+print(f"Average search time (sorted insertion): {avg_time_sorted:.10f} seconds per element")
+print(f"Total search time (sorted insertion): {total_time_sorted:.10f} seconds (10 runs)")
+print(f"Average search time (shuffled insertion): {avg_time_shuffled:.10f} seconds per element")
+print(f"Total search time (shuffled insertion): {total_time_shuffled:.10f} seconds (10 runs)")
+
 
 """""
 
-Performance analysis:
+BST Performance Analysis:
 
-BST Performance Analysis
 Average search time (sorted insertion): avg_time_sorted seconds
 Total search time (sorted insertion): total_time_sorted seconds
 Average search time (shuffled insertion): avg_time_shuffled seconds
 Total search time (shuffled insertion): total_time_shuffled seconds
-A BST built from a sorted vector tends to become unbalanced, resembling a linked list,
+A BST built from a sorted vector tends to become unbalanced, degenerating into a linked list,
 which results in worse search performance (O(n) complexity instead of O(log n)).
 Shuffling the elements before insertion helps create a more balanced tree,
 improving search efficiency.
